@@ -1,7 +1,9 @@
 ---
 
 Decred On-Chain: A Look at Block Subsidies
+
 A Network-Based Approach to Valuing Cryptocurrencies
+
 Legacy Systems vs Public Blockchains
 The concept of a public blockchain represents a paradigm shift in the way economies are designed, and how stakeholders within these respective economies analyze the current state of affairs. Legacy economic systems are designed to be (1) opaque and (2) subject to interference. Contrary to the opinion of some, this is a feature instead of a bug. 
 Opacity in any relationship, whether it be economic or interpersonal, requires substantially more trust, and demands safeguards to protect those who are on the outside looking in. Interference i.e. the ability to change course on a previously established game plan / agreement, is thus considered a valuable feature in legacy systems.
@@ -201,5 +203,7 @@ Total Projected Reward Payout = Network Forward Looking Statements or Future Pro
 Block rewards are useful for tracking network value for hard capped cryptocurrencies early in their lives (at a minimum), as Bitcoin and Litecoin both tracked closely to their Total Projected Subsidies for >50% of their subsidy lives
 
 Signing out,
+
 Permabull Nino
+
 MASSIVE thank you to Checkmate, Richard Red, and JZ, who kindly took the time to detail review this piece.
