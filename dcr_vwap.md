@@ -20,12 +20,26 @@ Tickets are the semi-scarce asset of Decred's Proof of Stake mechanism. Just lik
 
 [INSERT TABLE HERE]
 
-Security for cryptocurrencies depend on the foundations listed in the table above - incentivizing people to contribute to the network is mission critical for the longevity of any crypto-network. These incentives to contribute are upheld not only by competing over scarce objects, but also by making the game for competing over these scarce objects *provably* fair. Fairness in distributed systems such as cryptocurrencies are best managed by the market itself, so fairness can be proven via (1) transparency, (2) data completeness, and (3) established / widely accepted quantitative measures.
+Security for cryptocurrencies depend on the foundations listed in the table above - incentivizing people to contribute to the network is mission critical for the longevity of any crypto-network. These incentives to contribute are upheld not only by competing over scarce objects, but also by making the game for competing over these scarce objects *provably* fair. Fairness in distributed systems such as cryptocurrencies are best managed by the market itself, so fairness can be proven via (1) transparency of data, (2) data completeness, and (3) established / widely accepted quantitative measures.
 
 Proof of Work offers transparency by allowing users to check the validity of hashes that supposedly fall below the network difficulty target. Futhermore, Proof of Work offers high data completeness as it's impossible for mining not to leave an on-chain footprint. Lastly - difficulty retargetings establish the fair balance between supply and demand, which can be checked on by looking at the frequency of which blocks are being discovered. All three things considered - Proof of Work is *provably* fair.
 
-Decred's Proof of Stake Tickets offers transparency by allowing users to check the validity of any given ticket being chosen to vote. Tickets are a consensus-critical part of Decred, so all ticket purchases and votes occur on-chain, so there is no missing data surrounding tickets for network stakeholders. And to finish things off - Decred tickets have ticket price retargetings which aim to establish a certain amount of ticket buying volume, which can be checked to determine if the retargeting is properly regulating supply and demand.
+Decred's Proof of Stake Tickets offers transparency by allowing users to check the validity of any given ticket being chosen to vote - which is a fucntion of the previous block's hash. Tickets are a consensus-critical part of Decred, so all ticket purchases and votes occur on-chain, so there is no missing data surrounding tickets for network stakeholders. And to finish things off - Decred tickets have ticket price retargetings which aim to establish a certain amount of ticket buying volume, which can be checked to determine if the retargeting is properly regulating supply and demand.
+
+Both PoW and Decred's PoS Tickets are built on the foundations of randomness, which is also incredibly important. If one party could game the system and win the PoW/PoS competitions consistently while not putting forth the appropriate amount of work/stake, then by definition these systems wouldn't be fair. PoW imposes this fairness by making block discovery a brute force process - forcing miners to plug nonces relentlessly until they find a hash below the network difficulty target. Decred's PoS leverages the randomness from PoW to its advantage, by making ticket selection pseudo-randomly derived from the previous block's hash.
 
 [INSERT TABLE HERE]
 
-Fairness matters - nobody cares about analyzing competition over scarce resources in these crypto-systems if they aren't fair. That's why this needs to be established up front - Decred tickets are a fair system, and thus are worth our time analyzing for purposes of looking into stakeholder behavior.
+Fairness matters - analyzing competition over scarce resources in these crypto-systems is substantially less interesting and predictive of user behavior if they aren't fair. Proof of stake systems are *generally* stamped as being "unfair", but that is not the case with Decred's ticketing system.
+
+Specifically speaking, Decred tickets serve multiple functions within the Decred network:
+
+(1) A means for users to accumulate as much of the 21 million DCR supply as possible
+(2) An additional authentication layer for newly discovered blocks
+(3) On-chain voting to push consensus changes
+(4) Off-chain voting to allocate treasury funds
+(5) Provide fungibility
+(6) Time-locked, trustless, custody of funds
+(7) Provide network participants with high signal data 
+
+
