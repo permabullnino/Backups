@@ -32,7 +32,7 @@ Both PoW and Decred's PoS Tickets are built on the foundations of randomness, wh
 
 Fairness matters - analyzing competition over scarce resources in these crypto-systems is substantially less interesting and predictive of user behavior if they aren't fair. Proof of stake systems are *generally* stamped as being "unfair", but that is not the case with Decred's ticketing system.
 
-Specifically speaking, Decred tickets serve multiple functions within the Decred network:
+Up to this point we've covered that tickets are scarce resources that are fairly competed over. However, it's also important to also understand that tickets are incredibly useful, wearing multiple hats within the network itself. More emphatically speaking, tickets drive the vast majority of operations that users leverage Decred for, including:
 
 (1) A means for users to accumulate as much of the 21 million DCR supply as possible
 (2) An additional authentication layer for newly discovered blocks
@@ -41,5 +41,9 @@ Specifically speaking, Decred tickets serve multiple functions within the Decred
 (5) Provide fungibility
 (6) Time-locked, trustless, custody of funds
 (7) Provide network participants with high signal data 
+
+When users lock their DCR in tickets, they're gaining access to everything listed above, and opting out of them when foregoing ticket purchases. In a later section we will do a deeper on the dynamics at play related to users opting in or out of tickets.
+
+
 
 
