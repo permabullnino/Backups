@@ -27,3 +27,5 @@ Proof of Work offers transparency by allowing users to check the validity of has
 Decred's Proof of Stake Tickets offers transparency by allowing users to check the validity of any given ticket being chosen to vote. Tickets are a consensus-critical part of Decred, so all ticket purchases and votes occur on-chain, so there is no missing data surrounding tickets for network stakeholders. And to finish things off - Decred tickets have ticket price retargetings which aim to establish a certain amount of ticket buying volume, which can be checked to determine if the retargeting is properly regulating supply and demand.
 
 [INSERT TABLE HERE]
+
+Fairness matters - nobody cares about analyzing competition over scarce resources in these crypto-systems if they aren't fair. That's why this needs to be established up front - Decred tickets are a fair system, and thus are worth our time analyzing for purposes of looking into stakeholder behavior.
