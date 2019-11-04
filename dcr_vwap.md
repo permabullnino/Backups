@@ -32,7 +32,9 @@ Both PoW and Decred's PoS Tickets are built on the foundations of randomness, wh
 
 Fairness matters - analyzing competition over scarce resources in these crypto-systems is substantially less interesting and predictive of user behavior if they aren't fair. Proof of stake systems are *generally* stamped as being "unfair", but that is not the case with Decred's ticketing system.
 
-Up to this point we've covered that tickets are scarce resources that are fairly competed over. However, it's also important to also understand that tickets are incredibly useful, wearing multiple hats within the network itself. More emphatically speaking, tickets drive the vast majority of operations that users leverage Decred for, including:
+---
+
+We have covered that tickets are scarce resources that are fairly competed over. However, it's also important to also understand that tickets are incredibly useful, wearing multiple hats within the network itself. More emphatically speaking, tickets drive the vast majority of operations that users leverage Decred for, including:
 
 (1) A means for users to accumulate as much of the 21 million DCR supply as possible
 (2) An additional authentication layer for newly discovered blocks
@@ -43,6 +45,28 @@ Up to this point we've covered that tickets are scarce resources that are fairly
 (7) Provide network participants with high signal data 
 
 When users lock their DCR in tickets, they're gaining access to everything listed above, and opting out of them when foregoing ticket purchases. In a later section we will do a deeper on the dynamics at play related to users opting in or out of tickets.
+
+---
+
+Thus far we have established that tickets are a scarce resource, that are competed for fairly, and provide a great deal of utility for network participants / the network itself. Now it's time to discuss the specific parameters of the ticketing system. These specifics build the backbone of ticket scarcity, competitive fairness, and utility that they provide. Understanding the specifics not only help us lock down these foundational bits, but also set the stage for us to compare ticket data to other User-Based indicators in crypto. After this comparison we can leverage this information to better analyze the TVWAP (Ticket Pool VWAP). The parameters of the Decred ticket system are as follows:
+
+(1) Target Ticket Pool Size: 40,960 tickets
+(2) Ticket Votes per Block: 5 - please note tickets get released from ticket pool after voting and need to be repurchased at the most recent ticket price
+(3) Block Times: ~5 minutes on average
+(4) Difficulty Adjustment: every 144 blocks - this 144 block period will be referred to as a "ticket window" herein
+(5) Ticket Voting: Pseudo-random
+
+We can take these base parameters and point out a few extra noteworthy aspects of the Decred ticket system:
+
+(1) Ticket Votes per Ticket Window: 720 votes (5 votes per block * 144 blocks per ticket window)
+(2) Ticket Window Duration: ~12 hours (144 blocks per ticket window * 5 minutes per block)
+
+Before moving forward, it's worth taking a second to remind those who are less familiar with Decred tickets that the goal of the ticket difficulty retargeting algorithm is to match supply and demand reliably. As such - if 720 tickets are getting released from the ticket pool during a ticket window, then the goal is to replace those tickets with another 720 tickets:
+
+(1) Ticket Windows to Fill Ticket Pool: 56 (40,960 target ticket pool size / ~720 tickets purchased per ticket window)
+(2) Days to Fill Ticket Pool: ~28 (56 ticket windows to fill pool / 2 ticket window periods per day)
+
+
 
 
 
