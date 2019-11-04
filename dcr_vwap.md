@@ -2,9 +2,9 @@ Decred On-Chain: The Ticket Pool VWAP
 
 Introduction / Roadmap
 
-In my previous piece "DCR On-Chain: A Look at Block Subsidies", we explored the ultimate Network-Based indicator - block rewards, and their relationship to network valuation from the point of view of the network itself, miners, stakers, and the DCR treasury. Within this article we will begin to explore and uncover the magic behind the ultimate Decred User-Based indicator - ticket data, and show how it provides a means for effectively gauging the HODL behavior of users within the Decred Network. This article aims to be a foundational piece in understanding ticket data for future pieces, explain why it's worthwhile analyzing, and hopefully provide some color for Decred-curious on-chain analysts within the cryptocurrency space. Below are the topics that will be covered within:
+In my previous piece "Decred On-Chain: A Look at Block Subsidies", we explored the ultimate Network-Based indicator - block rewards, and their relationship to network valuation from the point of view of the network itself, miners, stakers, and the DCR treasury. Within this article we will begin to explore and uncover the magic behind the ultimate Decred User-Based indicator - ticket data, and show how it provides a means for effectively gauging the HODL behavior of users within the Decred Network. This article aims to be a foundational piece in understanding ticket data for future pieces, explain why it's worthwhile analyzing, and hopefully provide some color for Decred-curious on-chain analysts within the cryptocurrency space. Below are the topics that will be covered within:
 
-(1) Decred Tickets: What they are, functions they serve, and ticket parameters
+(1) Decred Tickets: What they are, functions they serve, and ticket parameters [MAYBE MOVE TICKET PARAMS TO LATER SECTION]
 (2) Analysis of User-Based Indicators in Crypto-Networks
 (3) How Decred Tickets Break the Mold for User-Based Indicators
 (4) Definitions of "HODLing" in Different Crypto-Networks
@@ -53,7 +53,7 @@ Thus far we have established that tickets are a scarce resource, that are compet
 (1) Target Ticket Pool Size: 40,960 tickets
 (2) Ticket Votes per Block: 5 - please note tickets get released from ticket pool after voting and need to be repurchased at the most recent ticket price
 (3) Block Times: ~5 minutes on average
-(4) Difficulty Adjustment: every 144 blocks - this 144 block period will be referred to as a "ticket window" herein
+(4) Difficulty / Ticket Price Adjustment: every 144 blocks - this 144 block period will be referred to as a "ticket window" herein
 (5) Ticket Voting: Pseudo-random
 
 We can take these base parameters and point out a few extra noteworthy aspects of the Decred ticket system:
@@ -65,6 +65,12 @@ Before moving forward, it's worth taking a second to remind those who are less f
 
 (1) Ticket Windows to Fill Ticket Pool: 56 (40,960 target ticket pool size / ~720 tickets purchased per ticket window)
 (2) Days to Fill Ticket Pool: ~28 (56 ticket windows to fill pool / 2 ticket window periods per day)
+(3) Ticket Expiration: ~142 days (tickets that still haven't voted will expire, DCR will become spendable)
+
+---
+Analysis of User-Based Indicators in Crypto-Networks
+
+
 
 
 
