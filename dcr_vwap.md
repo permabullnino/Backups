@@ -83,7 +83,31 @@ Each indicator category possesses its own respective strengths and weaknesses as
 (2) Intent to Hold: Is the intent to hold implied based on the data, or is the indicator very explicit about intentions of users?
 (3) Dynamic: Does data driven by indicator provide reliable signals promptly? Or does it lag?
 
+Below we will discuss mining, throughput, and coin age as user based indicators by evaluating how well they satisfy the completeness, intent to hold, and dynamic standards needed for analyzing users holding behavior.
 
+Mining
+
+[INSERT TABLE HERE]
+
+(1) Completeness:
+(2) Intent to Hold:
+(3) Dynamic:
+
+Throughput
+
+[INSERT TABLE HERE]
+
+(1) Completeness:
+(2) Intent to Hold:
+(3) Dynamic:
+
+Coin Age
+
+[INSERT TABLE HERE]
+
+(1) Completeness:
+(2) Intent to Hold:
+(3) Dynamic:
 
 
 
