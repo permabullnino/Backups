@@ -70,6 +70,19 @@ Before moving forward, it's worth taking a second to remind those who are less f
 ---
 Analysis of User-Based Indicators in Crypto-Networks
 
+As a quick refresher, User-Based indicators are on-chain footprints that are left by users themselves. By analyzing the data flows driven by users, we can better understand how their behavior and how it changes with a network's growth over time. There are a variety of ways users can leave an on-chain footprint, but generally speaking there are 4:
+
+(1) Mining (Example: Difficulty Ribbon)
+(2) Throughput (Examples: NVT Ratio, Network Momentum)
+(3) Coin Age (Examples: HODL Waves, Realized Price)
+(4) Decred Tickets (Example: Volume Weighted Average Price)
+
+Each indicator category possesses its own respective strengths and weaknesses as far as data quality is concerned. Specifically speaking, for purposes of this article we care about data quality as it relates to analyzing holding behavior of users. In simple terms, these categories for analyzing holding behavior can be compared across 3 standards:
+
+(1) Completeness: Does indicator capture all relevant data, or can some of the data the indicator relies on occur off-chain?
+(2) Intent to Hold: Is the intent to hold implied based on the data, or is the indicator very explicit about intentions of users?
+(3) Dynamic: Does data driven by indicator provide reliable signals promptly? Or does it lag?
+
 
 
 
