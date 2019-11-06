@@ -98,18 +98,18 @@ Throughput
 [INSERT TABLE HERE]
 
 (1) Completeness: Throughput data is not complete, and will probably become less complete as time goes on - off-chain solutions like Lightning Network will allow users to transact without leaving an on-chain footprint. Further, users can also transact / allow coins to change hands using centralized solutions such as cryptocurrency exchanges like Coinbase, Kraken, etc.
-(2) Intent to Hold:
-(3) Dynamic:
+(2) Intent to Hold: Generally speaking we do not know whether transactions on-chain represent sends from an exchange to a personal wallet, a send from one personal wallet to another, or a send from a personal wallet to an exchange to sell. Overall, it's very difficult to figure out intent when it comes to a standard on-chain transaction.
+(3) Dynamic:Transactional throughput has proven to be relatively dynamic, with trends of anemic on-chain throughput during bear markets and elevated levels of throughput during accumulation periods and bull markets. 
 
 Coin Age
 
 [INSERT TABLE HERE]
 
-(1) Completeness:
-(2) Intent to Hold:
-(3) Dynamic:
+(1) Completeness: Just like Throughput, Coin Age does not guarantee data completeness. Coins can change hands via the various off-chain outlets available (lightning, exchanges, etc.)
+(2) Intent to Hold: Age resets for a set of UTXOs when they move on-chain. When these UTXOs aren't moving, they are by definition being HODL'd. Although data completeness concerns still remain, this understanding of intent is substantially stronger than in the cases of Mining and Throughput.
+(3) Dynamic:  
 
-
+[FINAL TABLE SHOWING ALL 3 INDICATORS]
 
 
 
