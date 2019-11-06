@@ -89,15 +89,15 @@ Mining
 
 [INSERT TABLE HERE]
 
-(1) Completeness:
-(2) Intent to Hold:
-(3) Dynamic:
+(1) Completeness: Mining data doesn't suffer from completeness issues, because by definition it needs to emerge on-chain in order to add blocks to the network's transactional history. 
+(2) Intent to Hold: Miners are known as the largest compulsory sellers of any cryptocurrency, as they have both fixed and variable costs to cover from their capital-intensive mining operations. There are certain points in market cycles where miners become more willing holders, but these points vary case-by-case. As such, the "intent to hold" is not by any means explicit as far as mining data is concerned.
+(3) Dynamic: Mining data is relatively dynamic, over market cycles hashrate has proven to be a reliable manner to identify market bottoms which is evident in squeezes in network hashrate over multi-week or multi-month period. However - on a more short term basis mining data *thus far* hasn't proven to be as dynamic in determining users' willingness to hold and direction for price.
 
 Throughput
 
 [INSERT TABLE HERE]
 
-(1) Completeness:
+(1) Completeness: Throughput data is not complete, and will probably become less complete as time goes on - off-chain solutions like Lightning Network will allow users to transact without leaving an on-chain footprint. Further, users can also transact / allow coins to change hands using centralized solutions such as cryptocurrency exchanges like Coinbase, Kraken, etc.
 (2) Intent to Hold:
 (3) Dynamic:
 
