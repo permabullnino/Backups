@@ -137,4 +137,20 @@ Decred HODL: Locking DCR up in tickets.
 
 HODLing Decred is different from Bitcoin HODLing. In Decred, HODLers buy into the social contract that governing the network is valuable, and that rights over governing are worth competing over. As such, if you are indeed a HODLer - you will be locking up your DCR in tickets. This is significant as it allows us to weed out all other transactions when trying to focus on HODLers, and we can assume that any standard Decred transaction (i.e. any non-ticket related transaction) represents marginal buyers and sellers. 
 
+---
 
+Introducing the Ticket Pool VWAP
+
+At this point we've built a foundational understanding of Decred tickets, what makes them special, and how they represent the collective pulse of HODLers within the Decred network. In the remainder of this piece we will focus on the Ticket Pool Volume Weighted Average Price over a variety of time frames, discuss how it performs versus the market price, and what the differences imply about HODLers and their relationship to the network valuation over time.
+
+The calculation for the TVWAP is simply the USD or BTC value locked into tickets over a selected timeframe divided by the the amount of DCR that have gone into tickets over that same period of time, as shown below:
+
+[SHOW TVWAP CALCULATION]
+
+The TVWAP is significant and important to be aware of at all times because it transaparently gives you an approximation of the cost basis of HODLers within Decred the network, or more specifically the prices they forewent liquidity to recommit to HODLing. Opportunity costs matter in all walks of life, and the TVWAP hones in on this. The success / failure on locking money in tickets instead of doing something else with those DCR can be measured in the profit / loss from the ticket entry point, which we can show using (1) a standard line chart with actual price vs TVWAP prices, or (2) the ratio of the actual price vs the different VWAP prices.
+
+Our chosen timeframes for this study are the 14 day , 28 day, and 142 day TVWAPs. The rationale for these timeframes are as follows:
+
+(1) 14 day: This timeframe has been chosen in order to provide a sensitive TVWAP that will be able to catch as many bottoms as possible.
+(2) 28 day: This timeframe is significant because it represents the amount of days it takes to fill up the ticket pool and also reflects the average vote time for a ticket.
+(3) 142 day: This timeframe is significant because it represents the amount of days it takes for a ticket to expire, or explained differently - for the ticket pool to move fully through every ticket purchased, whether it be via voting or expiration.
