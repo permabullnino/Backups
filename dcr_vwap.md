@@ -24,7 +24,7 @@ Security for cryptocurrencies depend on the foundations listed in the table abov
 
 Proof of Work offers transparency by allowing users to check the validity of hashes that supposedly fall below the network difficulty target. Futhermore, Proof of Work offers high data completeness as it's impossible for mining not to leave an on-chain footprint. Lastly - difficulty retargetings establish the fair balance between supply and demand, which can be checked on by looking at the frequency of which blocks are being discovered. All three things considered - Proof of Work is *provably* fair.
 
-Decred's Proof of Stake Tickets offers transparency by allowing users to check the validity of any given ticket being chosen to vote - which is a fucntion of the previous block's hash. Tickets are a consensus-critical part of Decred, so all ticket purchases and votes occur on-chain, so there is no missing data surrounding tickets for network stakeholders. And to finish things off - Decred tickets have ticket price retargetings which aim to establish a certain amount of ticket buying volume, which can be checked to determine if the retargeting is properly regulating supply and demand.
+Decred's Proof of Stake Tickets offers transparency by allowing users to check the validity of any given ticket being chosen to vote - which is a fucntion of the previous block's hash. Tickets are a consensus-critical part of Decred, so all ticket purchases and votes occur on-chain, so there is no missing material data surrounding tickets for network stakeholders. And to finish things off - Decred tickets have ticket price retargetings which aim to establish a certain amount of ticket buying volume, which can be checked to determine if the retargeting is properly regulating supply and demand.
 
 Both PoW and Decred's PoS Tickets are built on the foundations of randomness, which is also incredibly important. If one party could game the system and win the PoW/PoS competitions consistently while not putting forth the appropriate amount of work/stake, then by definition these systems wouldn't be fair. PoW imposes this fairness by making block discovery a brute force process - forcing miners to plug nonces relentlessly until they find a hash below the network difficulty target. Decred's PoS leverages the randomness from PoW to its advantage, by making ticket selection pseudo-randomly derived from the previous block's hash.
 
@@ -44,7 +44,7 @@ We have covered that tickets are scarce resources that are fairly competed over.
 (6) Time-locked, trustless, custody of funds
 (7) Provide network participants with high signal data 
 
-When users lock their DCR in tickets, they're gaining access to everything listed above, and opting out of them when foregoing ticket purchases. In a later section we will do a deeper on the dynamics at play related to users opting in or out of tickets.
+When users lock their DCR in tickets, they're gaining access to everything listed above, and opting out of them when foregoing ticket purchases. 
 
 ---
 
@@ -61,7 +61,7 @@ We can take these base parameters and point out a few extra noteworthy aspects o
 (1) Ticket Votes per Ticket Window: 720 votes (5 votes per block * 144 blocks per ticket window)
 (2) Ticket Window Duration: ~12 hours (144 blocks per ticket window * 5 minutes per block)
 
-Before moving forward, it's worth taking a second to remind those who are less familiar with Decred tickets that the goal of the ticket difficulty retargeting algorithm is to match supply and demand reliably. As such - if 720 tickets are getting released from the ticket pool during a ticket window, then the goal is to replace those tickets with another 720 tickets:
+Before moving forward, it's worth taking a second to remind those who are less familiar with Decred tickets that the goal of the ticket difficulty retargeting algorithm is to match supply and demand reliably. As such - if 720 tickets are getting released from the ticket pool during a ticket window, then the goal is to replace those tickets with another 720 tickets on average:
 
 (1) Ticket Windows to Fill Ticket Pool: 56 (40,960 target ticket pool size / ~720 tickets purchased per ticket window)
 (2) Days to Fill Ticket Pool: ~28 (56 ticket windows to fill pool / 2 ticket window periods per day)
@@ -70,12 +70,12 @@ Before moving forward, it's worth taking a second to remind those who are less f
 ---
 Analysis of User-Based Indicators in Crypto-Networks
 
-As a quick refresher, User-Based indicators are on-chain footprints that are left by users themselves. By analyzing the data flows driven by users, we can better understand how their behavior and how it changes with a network's growth over time. There are a variety of ways users can leave an on-chain footprint, but generally speaking there are 4:
+As a quick refresher, User-Based indicators are on-chain footprints that are left by users themselves. By analyzing the data flows driven by users, we can better understand their behavior and how it changes with a network's growth over time. There are a variety of ways users can leave an on-chain footprint, but generally speaking there are 4:
 
 (1) Mining (Example: Difficulty Ribbon)
 (2) Throughput (Examples: NVT Ratio, Network Momentum)
 (3) Coin Age (Examples: HODL Waves, Realized Price)
-(4) Decred Tickets (Example: Volume Weighted Average Price)
+(4) Decred Tickets (Example: Ticket Pool VWAP)
 
 Each indicator category possesses its own respective strengths and weaknesses as far as data quality is concerned. Specifically speaking, for purposes of this article we care about data quality as it relates to analyzing holding behavior of users. In simple terms, these categories for analyzing holding behavior can be compared across 3 standards:
 
@@ -91,7 +91,7 @@ Mining
 
 (1) Completeness: Mining data doesn't suffer from completeness issues, because by definition it needs to emerge on-chain in order to add blocks to the network's transactional history. 
 (2) Intent to Hold: Miners are known as the largest compulsory sellers of any cryptocurrency, as they have both fixed and variable costs to cover from their capital-intensive mining operations. There are certain points in market cycles where miners become more willing holders, but these points vary case-by-case. As such, the "intent to hold" is not by any means explicit as far as mining data is concerned.
-(3) Dynamic: Mining data is relatively dynamic, over market cycles hashrate has proven to be a reliable manner to identify market bottoms which is evident in squeezes in network hashrate over multi-week or multi-month period. However - on a more short term basis mining data *thus far* hasn't proven to be as dynamic in determining users' willingness to hold and direction for price.
+(3) Dynamic: Mining data is relatively dynamic, over market cycles hashrate has proven to be a reliable manner to identify market bottoms which is evident in squeezes in network hashrate over a multi-week or multi-month period. However - on a more short term basis mining data *thus far* hasn't proven to be as dynamic in determining users' willingness to hold and direction for price.
 
 Throughput
 
@@ -105,12 +105,36 @@ Coin Age
 
 [INSERT TABLE HERE]
 
-(1) Completeness: Just like Throughput, Coin Age does not guarantee data completeness. Coins can change hands via the various off-chain outlets available (lightning, exchanges, etc.)
-(2) Intent to Hold: Age resets for a set of UTXOs when they move on-chain. When these UTXOs aren't moving, they are by definition being HODL'd. Although data completeness concerns still remain, this understanding of intent is substantially stronger than in the cases of Mining and Throughput.
-(3) Dynamic:  
+(1) Completeness: Just like Throughput, Coin Age does not guarantee data completeness. Coins can change hands via the various off-chain outlets available (lightning, exchanges, etc.).
+(2) Intent to Hold: Age resets for a set of UTXOs when they move on-chain. When these UTXOs aren't moving, they are by definition being held. Although data completeness concerns still remain, this understanding of intent is substantially stronger than in the cases of Mining and Throughput.
+(3) Dynamic: Coin age has proven to be a dynamic means to track holding behavior of network participants over time, with slower moving but high conviction tools such as HODL Waves, and faster-responding tools like Realize Price, by assigning a price to coins based on when they last moved.
 
 [FINAL TABLE SHOWING ALL 3 INDICATORS]
 
+---
 
+How Decred Tickets Break the Mold for User-Based Indicators
+
+The Decred tickets system is special in that its design uniquely positions it for satisfying the completeness, intent to hold, and dynamic standards better than other indicators available in the cryptocurrency space. Below are the explanations for how, and why:
+
+(1) Completeness: As we've already stated before - all material data related to tickets appears on-chain, and we can expect that this will remain the case as tickets are consensus and governance critical. Data incompleteness in either of these arenas could potentially erode assurances surrounding digital scarcity and sound governance, respectively. 
+(2) Intent to Hold: By locking up DCR in tickets you are relinquishing spending capabilities in exchange for stake in the network. This tradeoff is holding in the purest sense, by committing skin in the game and only to be unlocked at a pseudo-random interval. There's zero ambiguity surrounding intent here - purchasing tickets = holding behavior.
+(3) Dynamic: One of the most overlooked aspects of the Decred ticket system is that users are engaging in what I like to call "active holding". Unlike other networks where holding simply equates to not moving coins for very long periods of time, Decred tickets force users out of holding (i.e. tickets voting) and require them to recommit to holding (i.e. purchasing a ticket at the most recent ticket price). This makes the Decred ticket data very dynamic, as it gives users the opportunity to opt out of holding or requires them to commit an on-chain footprint to prove their willingness to hold. With approximately ~190,000 DCR moving into tickets on a daily basis, this not only gives us a dynamic dataset but also a very large one.
+
+[TABLE SHOWING ALL 4 INDICATORS]
+
+---
+
+Definitions of "HODLing" in Different Crypto-Networks
+
+In the cryptoverse we refer to diehard advocates that do not have any intent to sell in the near future as "HODLers". This general definition applies to any network and its respective native asset, however - specificity surrounding how HODLers going about holding is valuable to understand, and a question worth addressing. Each network with its own design / goals will dictate how the native asset is held, and it's important to make this distinction between (1) different networks and (2) different types of activity within a network itself so we can ensure we are making fair comparisons and being as precise as possible when evaluating data. Below we have a quick comparison of Bitcoin and Decred, with (1) their respective network design / goals and (2) HODL definitions:
+
+Bitcoin Design / Goals: Proof of Work used to provide assurance over transactional history validity, and informal governance structure to coordinate network-wide initiatives. Ultimate goal = store of value.
+Bitcoin HODL: Not moving bitcoins for long periods of time.
+
+Decred Design / Goals: Hybrid Proof of Work + Proof of Stake used to provide assurance over transactional history validity, and formal governance structure to coordinate network-wide initiatives. Ultimate goal = store of value + digital state.
+Decred HODL: Locking DCR up in tickets.
+
+HODLing Decred is different from Bitcoin HODLing. In Decred, HODLers buy into the social contract that governing the network is valuable, and that rights over governing are worth competing over. As such, if you are indeed a HODLer - you will be locking up your DCR in tickets. This is significant as it allows us to weed out all other transactions when trying to focus on HODLers, and we can assume that any standard Decred transaction (i.e. any non-ticket related transaction) represents marginal buyers and sellers. 
 
 
