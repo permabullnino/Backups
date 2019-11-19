@@ -11,8 +11,9 @@ In my previous piece "Decred On-Chain: A Look at Block Subsidies", we explored t
 (5) Introducing the Ticket Pool VWAP
 (6) Analysis of 14, 28, and 140 Day DCRUSD Ticket Pool VWAP
 (7) Analysis of 14, 28, and 140 Day DCRBTC Ticket Pool VWAP
-(8) Lifetime DCRUSD VWAP, Lifetime DCRBTC VWAP, and Cumulative Cap
-(9) Closing Thoughts
+(8) Analysis of Ticket Pool VWAP Ratio Versus DCR Moved On-chain
+(9) Lifetime DCRUSD VWAP, Lifetime DCRBTC VWAP, and Cumulative Cap
+(10) Closing Thoughts
 
 Decred Tickets: What They Are, Functions They Serve and Ticket Parameters
 
@@ -149,8 +150,48 @@ The calculation for the TVWAP is simply the USD or BTC value locked into tickets
 
 The TVWAP is significant and important to be aware of at all times because it transaparently gives you an approximation of the cost basis of HODLers within Decred the network, or more specifically the prices they forewent liquidity to recommit to HODLing. Opportunity costs matter in all walks of life, and the TVWAP hones in on this. The success / failure on locking money in tickets instead of doing something else with those DCR can be measured in the profit / loss from the ticket entry point, which we can show using (1) a standard line chart with actual price vs TVWAP prices, or (2) the ratio of the actual price vs the different VWAP prices.
 
+[SHOW TVWAP RATIO CALC]
+
 Our chosen timeframes for this study are the 14 day , 28 day, and 142 day TVWAPs. The rationale for these timeframes are as follows:
 
-(1) 14 day: This timeframe has been chosen in order to provide a sensitive TVWAP that will be able to catch as many bottoms as possible.
+(1) 14 day: This timeframe has been chosen in order to provide a sensitive TVWAP that will be able to catch as many bottoms as possible. It also represents the amount of days it takes to fill 50% of the ticket pool.
 (2) 28 day: This timeframe is significant because it represents the amount of days it takes to fill up the ticket pool and also reflects the average vote time for a ticket.
 (3) 142 day: This timeframe is significant because it represents the amount of days it takes for a ticket to expire, or explained differently - for the ticket pool to move fully through every ticket purchased, whether it be via voting or expiration.
+
+In the next two sections we will perform an analysis of these TVWAPs for DCRUSD and DCRBTC.
+
+---
+
+Analysis of 14, 28, and 140 Day DCRUSD Ticket Pool VWAP
+
+Each TVWAP timeframe in this section will include a price chart overlaid on the TVWAP Ratio, that way readers can see how the timing of actual price bottoms compares to the TVWAP ratio. A brief analysis of each chart will follow, until we reach the 142 day DCRUSD TVWAP ratio - which will have instead dive into a comparative analysis versus the Decred Realized Cap to help us better track trend changes over time.
+
+14-Day TVWAP:
+
+[SHOW 14 DAY CHART W/ TVWAP RATIO]
+
+It's worthwhile noting that the ratio section at the bottom of the chart has two lines with (1) the yellow dotted line as the raw TVWAP ratio value and (2) the light blue solid line as the 7-day smoothed version of the raw TVWAP value. The red box represents the meat of the historical sell zone and the green box shows our historical buy zone. These zones respectively can be viewed as places where HODLers might become sellers, or where HODLers are so underwater that they're going to stick to the plan, wait for a reversal, or even add to their DCR hodlings. The historical zones for reversals are as follows:
+
+Sell zone: 1.15 - 1.35 TVWAP Ratio
+Buy zone: 0.90 - 0.75 TVWAP Ratio
+
+Note that there's approximately a 27% gap between the bottom of the sell zone and the top of the buy zone. Furthermore - note that DCRUSD to date hasn't had a full, longer term trend reversal without the 7-day smoothed ratio moving into the sell or buy zones. However, it is worth mentioning that the 14-day TVWAP isn't the ideal timeframe to use for this - the 28-day and 142-day timeframes are more appropriate.
+
+28-Day TVWAP:
+
+[SHOW 28 DAY CHART W/ TVWAP RATIO]
+
+Sell zone: 1.35 - 1.50 TWAP Ratio
+Buy zone: 0.90 - 0.70 TVWAP Ratio
+
+Quite naturally, the 28-day TVWAP Ratio tops and bottoms less frequently. This lack of frequency brings added significance for when it reaches our sell / buy zones, and can give us a higher conviction sell / buy signal. Another way to phrase this is that the people who filled up the ticket pool over the last 28 days are either in heavy profits or losses when the sell / buy zones are hit. Upon further inspection readers might notice that the 28-day TVWAP bottoms seem much more consistent than the tops, which would be a fair assessment. With more time my expectation is that we'll see the sell zone become better-defined. However, at a minimum we can use the bottom zone for a gauge on areas for maximum HODLer pain, which is usually where we see price action reverse. 
+
+142-Day TVWAP:
+
+There are three items that were previously explained that are relevant to this analysis here:
+
+(1) It takes 142 days to run through the entire ticket pool
+(2) Ticket buying is a high-signal way to identify HODLers transacting on the Decred network
+(3) All non-ticket transactions represent accumulators or capitulators
+
+The Realized Cap of any cryptocurrency represents the cumulative value of all coins on the network, but with their individual value assigned by when the coins were last moved. Unlike Bitcoin, Decred has a means to 
