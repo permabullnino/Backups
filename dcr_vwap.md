@@ -194,4 +194,8 @@ There are three items that were previously explained that are relevant to this a
 (2) Ticket buying is a high-signal way to identify HODLers transacting on the Decred network
 (3) All non-ticket transactions represent accumulators or capitulators
 
-The Realized Cap of any cryptocurrency represents the cumulative value of all coins on the network, but with their individual value assigned by when the coins were last moved. Unlike Bitcoin, Decred has a means to 
+The Realized Cap of any cryptocurrency represents the cumulative value of all coins on the network, but with their individual value assigned by when the coins were last moved. Decred has two ways in which coins move - (1) tickets and (2) standard transactions. The Decred Realized Cap captures the combination of these two. If the Realized Cap is supposed to capture the value of every most recent coin movement, then in theory it should most closely resemble the 142-day TVWAP Cap of all the TVWAPs, as that's the amount of days it takes to fully move through every single ticket in the ticket pool. The spread between the Realized Cap and 142-Day Cap should be representative of a accumulation or capitulation premium / discount as a result of the standard transactions included in the Realized Cap, which should give hints for the health of a current trend or direction of an upcoming trend. The chart comparing the Realized Cap, 142-Day Cap, and Actual Market Cap are shown below:
+
+[SHOW CHART]
+
+The results of this comparison line up nicely with expectations - while Realized Cap sits above the 142-Day Cap price action remains bullish, indicative of an accumulation premium for Decred, and viceversa for when Realized Cap is lower than the 142-Day Cap. 
