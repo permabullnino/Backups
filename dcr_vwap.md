@@ -11,9 +11,8 @@ In my previous piece "Decred On-Chain: A Look at Block Subsidies", we explored t
 (5) Introducing the Ticket Pool VWAP
 (6) Analysis of 14, 28, and 140 Day DCRUSD Ticket Pool VWAP
 (7) Analysis of 14, 28, and 140 Day DCRBTC Ticket Pool VWAP
-(8) Analysis of Ticket Pool VWAP Ratio Versus DCR Moved On-chain
-(9) Lifetime DCRUSD VWAP, Lifetime DCRBTC VWAP, and Cumulative Cap
-(10) Closing Thoughts
+(8) Lifetime DCRUSD VWAP, Lifetime DCRBTC VWAP, and Cumulative Cap
+(9) Closing Thoughts
 
 Decred Tickets: What They Are, Functions They Serve and Ticket Parameters
 
@@ -92,7 +91,7 @@ Mining
 
 (1) Completeness: Mining data doesn't suffer from completeness issues, because by definition it needs to emerge on-chain in order to add blocks to the network's transactional history. 
 (2) Intent to Hold: Miners are known as the largest compulsory sellers of any cryptocurrency, as they have both fixed and variable costs to cover from their capital-intensive mining operations. There are certain points in market cycles where miners become more willing holders, but these points vary case-by-case. As such, the "intent to hold" is not by any means explicit as far as mining data is concerned.
-(3) Dynamic: Mining data is relatively dynamic, over market cycles hashrate has proven to be a reliable manner to identify market bottoms which is evident in squeezes in network hashrate over a multi-week or multi-month period. However - on a more short term basis mining data *thus far* hasn't proven to be as dynamic in determining users' willingness to hold and direction for price.
+(3) Dynamic: Mining data is relatively dynamic, over market cycles hashrate has proven to be a reliable manner to identify market bottoms which is evident in squeezes in network hashrate over a multi-week or multi-month period. 
 
 Throughput
 
@@ -188,7 +187,7 @@ Quite naturally, the 28-day TVWAP Ratio tops and bottoms less frequently. This l
 
 142-Day TVWAP:
 
-There are three items that were previously explained that are relevant to this analysis here:
+There are three items that were previously explained relevant to this analysis:
 
 (1) It takes 142 days to run through the entire ticket pool
 (2) Ticket buying is a high-signal way to identify HODLers transacting on the Decred network
@@ -198,4 +197,41 @@ The Realized Cap of any cryptocurrency represents the cumulative value of all co
 
 [SHOW CHART]
 
-The results of this comparison line up nicely with expectations - while Realized Cap sits above the 142-Day Cap price action remains bullish, indicative of an accumulation premium for Decred, and viceversa for when Realized Cap is lower than the 142-Day Cap. 
+The results of this comparison line up nicely with expectations - while Realized Cap sits above the 142-Day Cap price action remains bullish, indicative of an accumulation premium for Decred, and viceversa for when Realized Cap is lower than the 142-Day Cap.
+
+---
+
+Analysis of 14, 28, and 142 Day DCRBTC Ticket Pool VWAP
+
+This section will follow a similar approach to the previous section - the 14-day and 28-day charts will include their respective TVWAP ratios along with the line chart of the Decred network's value denominated in BTC terms. The 142-day chart will include network value vs the 142-day BTC value, and accompanied with volume bars on the bottom for total DCR moved on-chain (ticket buying + standard transactions). This combination will give us perspective on HODLers, accumulators, and capitulators from a bird's eye view. 
+
+14-Day TVWAP:
+
+[SHOW 14-DAY CHART W/ TVWAP RATIO]
+
+Sell zone: 1.15 - 1.30 TVWAP Ratio
+Buy zone: 0.90 - 0.75 TVWAP Ratio
+
+28-Day TVWAP:
+
+[SHOW 28-DAY CHART W/ TVWAP RATIO]
+
+Sell zone: 1.20 - 1.45 TVWAP Ratio
+Buy zone: 0.80 - 0.65 TVWAP Ratio
+
+142-Day TVWAP:
+
+[SHOW CHART]
+
+ALTBTC charts are more useful for identifying accumulation / capitulation behavior in general. The basic rationale is that ALTUSD pairs can get dragged up / down by Bitcoin's price movements, so ALTBTC can help remove that noise to zoom in on the true demand for the altcoin itself. This approach is no different for DCRBTC - and the accumulation / capitulation we aim to identify shows itself in the 142-day chart. 
+
+Zoned off using green boxes are the nodes of high-volume DCR moved on-chain - which are our obvious zones of interest for accumulation / capitulation behavior. What's particularly interesting about these zones is that they all almost exclusively occur while the Decred network value sits below the 142-Day Cap, signalling that all big accumulation occurs when HODLers are underwater ("buying the blood") and all big capitulation occurs when these same HODLers are feeling the pain of Mr. Market. A few additional notes include:
+
+(1) The 142-Day Cap seems to serve as the bull / bear line for DCRBTC - notice how for Decred's entire bear market (since July 2018) the Decred market cap was unable to cleanly breach the 142-Day Cap.
+(2) Periods where market cap sits above the 142-Day Cap are characterisically quiet on-chain, with a steady flow of coins but no obvious large movements. 
+
+---
+
+Lifetime Ticket Pool VWAP, Lifetime DCR Moved On-Chain VWAP, Lifetime Average Cap, and Cumulative Cap
+
+This section focuses on the lifetime values moved on-chain, how they compare to their non-weighted equivalents, and how these help us analyze the big picture of the Decred markets. The definition of these lifetime values, along with their formulas, and a brief explanation of their significance are included below:
