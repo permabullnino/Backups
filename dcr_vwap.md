@@ -232,6 +232,36 @@ Zoned off using green boxes are the nodes of high-volume DCR moved on-chain - wh
 
 ---
 
-Lifetime Ticket Pool VWAP, Lifetime DCR Moved On-Chain VWAP, Lifetime Average Cap, and Cumulative Cap
+Cumulative Cap, Lifetime Ticket Pool VWAP, Lifetime DCR Moved On-Chain VWAP, and Lifetime Average Cap
 
-This section focuses on the lifetime values moved on-chain, how they compare to their non-weighted equivalents, and how these help us analyze the big picture of the Decred markets. The definition of these lifetime values, along with their formulas, and a brief explanation of their significance are included below:
+This section focuses on the lifetime values moved on-chain, how they compare to their non-weighted equivalents, and how these help us analyze the big picture of the Decred markets. The definition of these lifetime values, a brief explanation of their significance, and their formulas are included below:
+
+Cumulative Cap
+
+Definition: The cumulative value that has gone into tickets over Decred's lifetime.
+Significance: Decred tickets are opt-in, which means that users have two decisions: (1) to buy tickets and (2) to not buy tickets. This means that there's no sell side of tickets, and that the cumulative value locked into tickets can be a gauge to meausre the net demand to HODL DCR.
+Formula: [SHOW FORMULA]
+
+Lifetime Ticket Pool VWAP (LTVWAP)
+
+Definition: The weighted average DCRUSD or DCRBTC value that has gone into tickets over Decred's entire lifetime.
+Significance: This is the point where on average a Decred network participant committed to HODLing. As such, the LTVWAP can be viewed as a representative break even price for HODLers
+Formula: [SHOW FORMULA]
+
+Lifetime DCR Moved On-Chain VWAP
+
+Definition: The weighted average DCRUSD or DCRBTC value that has moved on-chain (tickets & standard transactions) over Decred's entire lifetime.
+Significance: This also represents a breakeven price of sorts, but is more inclusive as it includes accumulators and capitulators.
+Formula: [SHOW FORMULA]
+
+Lifetime Average Cap
+
+Definition: The non-weighted average price Decred has traded at throughout its lifetime.
+Significance: This is included within as a means to compare the difference between the on-chain / volume-weighted tools. 
+Formula: [SHOW FORMULA]
+
+Below we have the DCRUSD & DCRBTC charts with all the above included versus Decred's Market Cap:
+
+[SHOW DCRUSD CHART]
+[SHOW DCRBTC CHART]
+
