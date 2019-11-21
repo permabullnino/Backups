@@ -248,7 +248,7 @@ Definition: The weighted average DCRUSD or DCRBTC value that has gone into ticke
 Significance: This is the point where on average a Decred network participant committed to HODLing. As such, the LTVWAP can be viewed as a representative break even price for HODLers
 Formula: [SHOW FORMULA]
 
-Lifetime DCR Moved On-Chain VWAP
+Lifetime DCR Moved On-Chain VWAP (LOVWAP)
 
 Definition: The weighted average DCRUSD or DCRBTC value that has moved on-chain (tickets & standard transactions) over Decred's entire lifetime.
 Significance: This also represents a breakeven price of sorts, but is more inclusive as it includes accumulators and capitulators.
@@ -263,5 +263,14 @@ Formula: [SHOW FORMULA]
 Below we have the DCRUSD & DCRBTC charts with all the above included versus Decred's Market Cap:
 
 [SHOW DCRUSD CHART]
+
+Note 1: The Decred Market Cap followed the Cumulative Cap closely from network launch until the the bull market top in early 2018.
+Note 2: Throughout Decred's lifetime the LTVWAP, the LOVWAP, and Lifetime Average Cap have overall represented a zone of confluence when Market Cap approaches it from the upside or downside. As the "Break Even Zone" for Decred participants it is obvious in retrospect that this is where price stalled in late 2018, and so far marked the DCRUSD top for 2019.
+Note 3: The Decred Market Cap has put in significant bottoms on three different occasions when Market Cap is at 35% of the Lifetime Ticket Pool VWAP.
+
 [SHOW DCRBTC CHART]
+
+Note 1: The Decred Market Cap followed the Cumulative Cap through mid 2017, which was the end of the notorious Alt Season.
+Note 2: What applied to the DCRUSD chart likewise applies to DCRBTC - the LTVWAP, the LOVWAP, and Lifetime Average Cap are a large confluence zone of buy / sell activity. Like we've mentioned before - this makes a lot of sense as the "Break Even Zone" for network participants.
+Note 3: DCRBTC has had two significant bottoms - one in early 2017 and one in late 2019. These bottoms were not at an equal % down from the LTVWAP, but have been close enough around ~28% (shown with the purple line)
 
