@@ -274,3 +274,16 @@ Note 1: The Decred Market Cap followed the Cumulative Cap through mid 2017, whic
 Note 2: What applied to the DCRUSD chart likewise applies to DCRBTC - the LTVWAP, the LOVWAP, and Lifetime Average Cap are a large confluence zone of buy / sell activity. Like we've mentioned before - this makes a lot of sense as the "Break Even Zone" for network participants.
 Note 3: DCRBTC has had two significant bottoms - one in early 2017 and one in late 2019. These bottoms were not at an equal % down from the LTVWAP, but have been close enough around ~28% (shown with the purple line)
 
+Now that we have the HODLer Break Even Price (LTVWAP) and the HODLer, Accumulator, & Capitulator Break Even Price (LOVWAP), we can merge them into the block rewards paid to date lines (covered in this article) to create an overall lifetime network participant break even  chart for DCRUSD & DCRBTC:
+
+[SHOW DCRUSD CHART]
+
+[SHOW DCRBTC CHART]
+
+---
+
+Closing Thoughts
+
+Within we have covered what makes Decred tickets a unique User-based indicator, how it helps us filter out noise between HODLers, Accumulators, and Capitulators, and the significance of the volume-weighted average value that has gone into tickets over various timeframes. Before closing - please remember that Decred is still a young network, and that we're in the early stages of evaluating a blockchain that could be around for a very long time. This passing of time can prove to change / prove incorrect certain data that we've seen to date. However, hopefully this piece helps us all have the frameworks in place to dive deeper and appropriately change assumptions if the time comes. Until then - signing out...
+
+Permabull Nino
